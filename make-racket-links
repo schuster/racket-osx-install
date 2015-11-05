@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# for each file in racket bin, make link in /usr/local/bin
+
+for prog in $(ls /Applications/Racket/bin)
+do
+    ln -s /Applications/Racket/bin/"$prog" /usr/local/bin/"$prog"
+done
